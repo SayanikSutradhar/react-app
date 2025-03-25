@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@400..900&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+h1{
+  font-family: "Rancho", cursive;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row on desktop */
+    gap: 20px;
+    padding: 20px;/* Limit width to maintain structure */
+    margin: auto;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 280px; /* Fixed height */
+    object-fit: cover; /* Ensures images are uniform */
+    border-radius: 5px;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .product-name {
+    font-size: 19px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .product-price {
+    font-size: 19px;
+    color: #030303;
+    text-align: right;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+  }
+  
+  .buy-button {
+    background-color: #0a0a0a;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  
+  .buy-button:hover {
+    background-color: #2b9b63;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .product-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 items per row on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 item per row on small screens */
+    }
+  }
+  

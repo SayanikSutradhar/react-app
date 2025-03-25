@@ -1,0 +1,45 @@
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .store-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .about {
+    margin: 10px 0;
+    font-size: 14px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .icon:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .store-name {
+      font-size: 20px;
+    }
+    .icon {
+      font-size: 20px;
+    }
+  }
+  
