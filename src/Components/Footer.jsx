@@ -44,7 +44,8 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>© 2025 {data?.store_name || "Your Store"}. All Rights Reserved.</p>
+      <p>For business inquiries, contact - <a href={`mailto:${data?.email}`}>{data?.email}</a></p>
+      <p>© 2025 {data?.store_name || "Your Store"}. All Rights Reserved.</p>
       </div>
     </footer>
   );

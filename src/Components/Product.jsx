@@ -7,7 +7,7 @@ const Product = () => {
 
   useEffect(() => {
     // Fetch product data
-    fetch("https://my-store-strapi.onrender.com/api/products?populate=*")
+    fetch("https://my-store-strapi.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         const activeProducts = data.data.filter((product) => product.active);
@@ -37,7 +37,7 @@ const Product = () => {
       {products.map((product) => (
         <div key={product.id} className="product-card">
           <img
-            src={`https://my-store-strapi.onrender.com${product.image?.url}`}
+            src={product.image_url}
             alt={product.name}
             className="product-image"
           />

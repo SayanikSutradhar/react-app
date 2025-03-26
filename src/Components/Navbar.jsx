@@ -21,8 +21,8 @@ export class Navbar extends Component {
   render() {
     return (
       <div className="navbar">
-        {this.state.storeName || 'Loading...'}
-        <img src="https://my-store-strapi.onrender.com/uploads/istockphoto_1308675508_612x612_removebg_preview_1_1_d99fa6eb5d.png" alt="Logo" className="navbar-logo" />
+        {this.state.storeName || ''}
+        <img src="https://i.postimg.cc/kMyGHt9H/istockphoto-1308675508-612x612-removebg-preview-1-1.png" alt="Logo" className="navbar-logo" />
       </div>
     );
   }
